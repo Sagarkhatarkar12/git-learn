@@ -37,13 +37,19 @@
         }
 
         .container {
-            height: 100vh;
+            height: 150vh;
             width: 100vw;
+            border: 2px solid black;
+
         }
 
         :root {
             --gray: gray;
             --bg-color: #f0efe7;
+            --blue: #009099;
+            --font-color: #4e443c;
+            --orange: #f14e32;
+
         }
 
         .navigation-bar {
@@ -146,36 +152,264 @@
             display: flex;
             background-image: url("/assets/image/isometric-grid@2x.png");
             background-position: center;
-            height: 38rem;
-            display: flex;
-            justify-content: center;
-            align-content: center;
+            height: 30rem;
+            /* display: flex; */
+            /* justify-content: center;
+            align-content: center; */
+            width: 100%;
+            /* background-color: red; */
             /* background-repeat: no-repeat; */
-         
+
+        }
+
+        .contain-center {
+            display: flex;
+            /* background-color: blue; */
+            width: 938px;
+            margin: 0px auto;
+            /* flex-direction: column; */
+            height: 100%;
+            position: relative;
+
         }
 
         .left-container {
-            width: 50%;
-            padding: 0px 10rem;
-
-            display: flex;
+            width: 60%;
+            padding: 3rem 0rem;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 2rem;
+            display: flex;
+            align-items: flex-end;
+            gap: 3rem;
         }
 
         .left-container p {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
+            line-height: 2.7rem;
+            color: var(--font-color);
         }
 
         .right-contiainer {
-            width: 50%;
-            background-image: url("assets/image/branching-illustration@2x.png");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: contain;
+            width: 40%;
+            position: relative;
+            /* background-position: 40rem 50rem
+
+            ; */
+            /* top: 10px;
+             */
+
+
+            /* background-size: 30rem 30rem; */
         }
+
+        .right-contiainer-img {
+            background-image: url("assets/image/branching-illustration@2x.png");
+            content: "";
+            position: absolute;
+            top: 2rem;
+            left: 2rem;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+        }
+
+
+        .link-color {
+            color: var(--blue);
+            text-decoration: none;
+        }
+
+        .contain-center {
+            /* border: 4px solid darkblue; */
+        }
+
+        .frontend-navigation {
+            display: flex;
+            background-color: var(--bg-color);
+            /* border: 2px solid #009099; */
+            /* justify-content: center; */
+        }
+
+        .frontend-left-navigation {
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            /* justify-content: center; */
+            /* position: relative; */
+            gap: 2rem;
+            width: 71%;
+            /* border: 1px solid black; */
+            padding: 3rem 1rem;
+        }
+  
+        .nav-row {
+            display: flex;
+            gap: 2rem;
+            /* justify-content: center; */
+            /* align-items: center; */
+        }
+
+        .nav-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            width: 32rem;
+            /* background-color: red; */
+            /* border: 1px solid red; */
+
+        }
+
+        .nav-image {
+            height: 8rem;
+            width: 11rem;
+            border-radius: 50%;
+
+            overflow: hidden;
+        }
+
+        .nav-image img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .desc-heading {
+            color: var(--orange);
+        }
+
+        .nav-description {
+            color: var(--font-color);
+            font-size: 1.3rem;
+            line-height: 1.5rem;
+            /* border: 2px solid rebeccapurple; */
+            word-spacing: 0.4rem;
+            padding: 0;
+            width: 100%;
+            word-wrap: break-word;
+        }
+
+        .nav-desc {
+            display: flex;
+            flex-direction: column;
+            /* border: 2px solid slategrey; */
+            gap: 0.6rem;
+            width: 100%;
+
+        }
+
+        .desc-heading {
+            font-size: 2rem;
+        }
+
+        /* ads section */
+        .ads {
+            display: flex;
+            height: 10rem;
+            width: 100%;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .ads-image {
+            height: 8rem;
+            width: 9.8rem;
+        }
+
+        .ads-desc p {
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+        }
+        /* window making */
+
+        .frontend-right-navigation{
+            width: 29%;
+            padding: 3rem 0rem;
+            /* border: 1px solid black; */
+        }
+        .window{
+            height: 20rem;
+            width: 28rem;
+            background-image: url("assets/image/monitor-windows.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding: 1rem 3rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        .lt{
+            font-family: sans-serif;
+            font-size: 1.9rem;
+            color:white;
+        }
+        .D-btn{
+           
+            padding: 0.5rem 0.5rem;
+            cursor: pointer;
+            background-color: var(--blue);
+            color: white;
+            border: 2px solid #02686f;
+            font-size: 1.9rem;
+            width: 22rem;
+        }
+        .version{
+            color: white;
+            font-size: 3rem;
+        }
+.rel a{
+    color:white;
+}
+.window-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15rem;
+
+    flex-direction: column;
+}
+.wind-box-row{
+    display: flex;
+
+    gap: 2rem;
+}
+.wind-box-item{
+
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    width: 10rem;
+    gap: 1rem;
+
+}
+.wind-box-item-img{
+    height: 3rem;
+    width: 3rem;
+    overflow: hidden;
+}
+.wind-box-item-img img{
+    height: 100%;
+    width: 100%;
+}
+.wind-box-item-description p a{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.hr-bottom{
+    /* position: absolute; */
+    bottom: 0;
+    
+    width: 969px;
+    text-align: center;
+    margin: 0px auto;
+}
+        /* div{
+    outline: 2px solid red;
+}
+p{
+    outline: 2px solid blue;
+} */
     </style>
 
 </head>
@@ -206,17 +440,146 @@
             </nav>
         </header>
         <section class="main-container">
-            <div class="left-container">
-                <p class="text-line">
-                    Git is a <span>free and open source</span> distributed version control system designed to handle
-                    everything from small to very large projects with speed and efficiency.
-                </p>
-                <p class="text-line">Git is easy to learn and has a tiny footprint with lightning fast performance. It outclasses SCM tools like Subversion, CVS, Perforce, and ClearCase with features like cheap local branching, convenient staging areas, and multiple workflows.</p>
-            </div>
-            <div class="right-contiainer">
+            <div class="contain-center">
+                <div class="left-container">
+                    <p class="text-line">
+                        Git is a <a class="link-color">free and open source</a> distributed version control system
+                        designed
+                        to handle
+                        everything from small to very large projects with speed and efficiency.
+                    </p>
+                    <p class="text-line">Git is <a href="" class="link-color"> easy to learn </a>and has a <a href=""
+                            class="link-color"> tiny footprint with lightning fast performance.</a> It outclasses SCM
+                        tools
+                        like Subversion, CVS, Perforce, and ClearCase with features like <a href=""
+                            class="link-color">cheap
+                            local branching</a> , convenient <a href="" class="link-color">staging areas</a> , and <a
+                            href="" class="link-color">multiple workflows</a> .</p>
+                </div>
 
+                <div class="right-contiainer">
+                    <div class="right-contiainer-img">
+                        <img src="/assets/image/branching-illustration@2x.png" alt="">
+                    </div>
+                    .
+                </div>
             </div>
         </section>
+        <section class="frontend-navigation">
+            <div class="contain-center">
+                <div class="frontend-left-navigation">
+                    <div class="nav-row">
+                        <div class="nav-item">
+                            <div class="nav-image">
+                                <img src="/assets/image/nav-about@2x.png" alt="">
+                            </div>
+                            <div class="nav-desc">
+                                <h1 class="desc-heading">About</h1>
+                                <p class="nav-description"> The advantages of Git compared to other source control
+                                    systems.</p>
+                            </div>
+                        </div>
+                        <div class="nav-item">
+                            <div class="nav-image">
+                                <img src="/assets/image/nav-documentation@2x.png" alt="">
+                            </div>
+                            <div class="nav-desc">
+                                <h1 class="desc-heading">Documentation</h1>
+                                <p class="nav-description"> Command reference pages, Pro Git book content, videos and
+                                    other materia.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-row">
+                        <div class="nav-item">
+                            <div class="nav-image">
+                                <img src="/assets/image/nav-downloads@2x.png" alt="">
+                            </div>
+                            <div class="nav-desc">
+                                <h1 class="desc-heading">
+                                    Downloads
+                                </h1>
+                                <p class="nav-description"> GUI clients and binary releases for all major platforms.</p>
+                            </div>
+                        </div>
+                        <div class="nav-item">
+                            <div class="nav-image">
+                                <img src="/assets/image/nav-community@2x.png" alt="">
+                            </div>
+                            <div class="nav-desc">
+                                <h1 class="desc-heading">Community</h1>
+                                <p class="nav-description">Get involved! Bug reporting, mailing list, chat, development
+                                    and more.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr>
+                    <div class="ads">
+                        <div class="ads-image">
+                            <img src="/assets/image/progit2.png" alt="">
+                        </div>
+                        <div class="ads-desc">
+                            <p><a href="" class="link-color">Pro Git </a> by Scott Chacon and Ben Straub is available to
+                                <a href="" class="link-color">read online for free.</a> Dead tree versions are available
+                                on <a href="" class="link-color">Amazon.com.</a> </p>
+                        </div>
+                    </div>
+               
+                </div>
+                <hr>
+                <div class="frontend-right-navigation">
+                    <div class="window">
+                        <p class="lt">Latest source Release</p>
+                        <h2 class="version">2.49.0</h2>
+                        <p class="rel"><a href="">Release Notes (2025-03-14)</a></p>
+                        <buttton class="D-btn">Download for Windows</buttton>
+                    </div>
+                    <div class="window-box">
+                        <div class="wind-box-row">
+                            <div class="wind-box-item">
+                                <div class="wind-box-item-img">
+                                    <img src="/assets/image/gui@2x.png" alt="">
+                                </div>
+                                <div class="wind-box-item-description">
+                                    <p><a href="" class="link-color">Windows GUIs</a></p>
+                                </div>
+                            </div>
+                            <div class="wind-box-item">
+                                <div class="wind-box-item-img">
+                                    <img src="/assets/image/box.png" alt="">
+                                </div>
+                                <div class="wind-box-item-description">
+                                    <p><a href="" class="link-color">Tarballs</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wind-box-row">
+                            <div class="wind-box-item">
+                                <div class="wind-box-item-img">
+                                    <img src="/assets/image/apple@2x.png" alt="">
+                                </div>
+                                <div class="wind-box-item-description">
+                                    <p><a href="" class="link-color">Mac Bulid</a></p>
+                                </div>
+                            </div>
+                            <div class="wind-box-item">
+                                <div class="wind-box-item-img">
+                                    <img src="/assets/image/source-code.png" alt="">
+                                </div>
+                                <div class="wind-box-item-description">
+                                    <p><a href="" class="link-color">Source Code</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+                
+            </div>
+        </section>
+        <hr class="hr-bottom"> 
     </div>
 </body>
 
